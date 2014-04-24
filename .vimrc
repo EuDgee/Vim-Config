@@ -29,6 +29,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set t_Co=256
+autocmd FileType javascript set colorcolumn=80
 
 colorscheme gruvbox
 if !has("gui_running")
