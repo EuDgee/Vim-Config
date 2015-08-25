@@ -1,5 +1,16 @@
+syntax on
+
+set tabstop=2
+set shiftwidth=2
+set smarttab
+set expandtab
+set smartindent
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
